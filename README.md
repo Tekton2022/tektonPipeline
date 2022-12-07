@@ -13,10 +13,10 @@ Instalacion de herramientas para la distribucion de linux Ubuntu.
 
 Node.js
 ```
-curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
-node -v
-node -e "console.log('Hola mundo')"
+curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\ ;
+sudo apt-get install -y nodejs;
+node -v;
+node -e "console.log('Hola mundo')";
 ```
 
 para distribuciones Debian utilizar el siguiente comando como root 
@@ -108,8 +108,8 @@ Kubernetes, Minikuber y Tekton
 
 Para la instalacion de minikube y  tekton dentro de kubernetes utilizamos los siguientes comandos 
 ```
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64;
+sudo install minikube-linux-amd64 /usr/local/bin/minikube;
 ```
  iniciamos minikube con 
  ```
@@ -127,7 +127,7 @@ para la instalacion del dashboard
 ```
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/dashboard/latest/tekton-dashboard-release.yaml
 ```
-para verificar la instlacion usamos 
+para verificar la instalacion usamos 
 ```
 kubectl get pods --namespace tekton-pipelines --watch
 ```
@@ -142,52 +142,5 @@ kubectl --namespace tekton-pipelines port-forward svc/tekton-dashboard 9097:9097
 
 
 Instalacion de SCRIPT sin explicacion 
-
-```
-
-curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\ ;
-sudo apt-get install -y nodejs ;
-node -v;
-node -e "console.log('Hola mundo')";
-echo "Instalacion de node completada;
-
-sudo apt-get remove docker docker-engine docker.io containerd runc;
- sudo apt-get update ;
- sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release ;
-sudo mkdir -p /etc/apt/keyrings;
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg;
- echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null;
-   sudo apt-get update;
-   sudo chmod a+r /etc/apt/keyrings/docker.gpg;
- sudo apt-get update;
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin;
- sudo docker run hello-world;
- echo "Instalacion de docker completa";
-
-  sudo groupadd docker;
-  luego agregamos nuestro usuario al grupo creado
-  echo "Agregar usuario a grupo de docker con el sigueinte comando;
-  echo " sudo usermod -aG docker $USER "
-  whoami
-  read $var1 | 
-  sudo usermod -aG docker $$var1; 
-  newgrp docker;
-  verificamos que se pueda utilizar docker sin sudo 
-  docker run hello-world
-
-para inicializar docker utilizamos los siguientes comandos 
- sudo systemctl enable docker.service
- sudo systemctl enable containerd.service
-para parar o desabilitar nuestro servicio de docker utilizamos
- sudo systemctl disable docker.service
- sudo systemctl disable containerd.service
-
-
 
 ```
