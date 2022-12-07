@@ -170,7 +170,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
   luego agregamos nuestro usuario al grupo creado
   echo "Agregar usuario a grupo de docker con el sigueinte comando;
   echo " sudo usermod -aG docker $USER "
-  sudo usermod -aG docker $USER; 
+  whoami
+  read $var1 | 
+  sudo usermod -aG docker $$var1; 
   newgrp docker;
   verificamos que se pueda utilizar docker sin sudo 
   docker run hello-world
