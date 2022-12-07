@@ -15,7 +15,8 @@ Node.js
 ```
 curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
-
+node -v
+node -e "console.log('Hola mundo')"
 ```
 
 para distribuciones Debian utilizar el siguiente comando como root 
@@ -23,6 +24,7 @@ para distribuciones Debian utilizar el siguiente comando como root
 ```
 curl -fsSL https://deb.nodesource.com/setup_19.x | bash - &&\
 apt-get install -y nodejs
+
 ```
 
 
@@ -145,7 +147,9 @@ Instalacion de SCRIPT sin explicacion
 
 curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\ ;
 sudo apt-get install -y nodejs ;
-echo "Instalacion de node completada
+node -v;
+node -e "console.log('Hola mundo')";
+echo "Instalacion de node completada;
 
 sudo apt-get remove docker docker-engine docker.io containerd runc;
  sudo apt-get update ;
