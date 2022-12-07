@@ -1,7 +1,9 @@
 # tektonPipeline
 Proyecto de tesis utilizando los pipelines de Tekton y Jenkins X
 
-Instalación de herramientas
+Instalación de herramientas para instalacion de addons
+ sudo apt-get install gcc g++ make
+
 
 - Node.js
 - Git
@@ -9,7 +11,10 @@ Instalación de herramientas
 - Kubernetes-Minikube
 - Tekton
 
-Instalacion de herramientas para la distribucion de linux Ubuntu. 
+Instalacion de herramientas para la distribucion de linux Ubuntu 22.04 LTS. 
+intalador de 
+ sudo apt-get install gcc g++ make
+
 
 Node.js
 ```
