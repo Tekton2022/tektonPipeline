@@ -30,9 +30,9 @@ apt-get install -y nodejs
 
 Git
 ```
-sudo apt-get update
-sudo apt install git-all
-git --version
+sudo apt-get update;
+sudo apt install git-all -y;
+git --version;
 ```
 
 Docker 
@@ -48,7 +48,7 @@ sudo apt-get update
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release -y
 ```
 Agregamos la llave oficial de docker para tener una aplicacion certificada y segura
 ```
@@ -70,9 +70,9 @@ sudo mkdir -p /etc/apt/keyrings
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 sudo apt-get update
  ```
-Comenzamos la instalacion 
+Comenzamos la instalacion de docker engine
 ```
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 ```
 verificamos una instalacion correcta 
 ``` 
