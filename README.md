@@ -114,8 +114,8 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube;
  ```
  minikube start
  ```
-una vez iniciado minikube podemos proceder a instalar las herramientas de tekton
-para la instalación de tekton CLI
+una vez iniciado minikube podemos proceder a instalar las herramientas de tekton.
+Para la instalación de tekton CLI usamos
 ```
 sudo apt update;sudo apt install -y gnupg
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3EFE0E0A2F2F60AA
