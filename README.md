@@ -9,9 +9,6 @@ Proyecto de tesis utilizando los pipelines de Tekton y Jenkins X
 - Tekton
 
 Instalación de herramientas para la distribución de linux Ubuntu 22.04 LTS. 
-intalador de 
- sudo apt-get install gcc g++ make
-
 
 Node.js
 ```
