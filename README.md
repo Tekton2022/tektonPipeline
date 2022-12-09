@@ -1,7 +1,7 @@
 # tektonPipeline
 Proyecto de tesis utilizando los pipelines de Tekton y Jenkins X
 
-Instalación de herramientas para la aplicacion de pipeline utulizando Tekton.
+Instalación de herramientas para la aplicacion de pipeline utilizando Tekton.
 
 
 - Node.js
